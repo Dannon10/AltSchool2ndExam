@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: #3bb8d4;
+}
+
+.home-links {
+  height: 15vh;
+  display: flex;
+  background-color: white;
+  justify-content: flex-end;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 10px 6%;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+nav > ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 30px;
+  font-size: 30px;
+  font-weight: 550;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav > ul li a {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  margin-right: 4px;
+}
+
+nav > ul li a:hover {
+  color: teal;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+}
+
+.main > h2 {
+  color: white;
+  font-size: 50px;
+}
+
+.main > h4 {
+  color: white;
+  font-size: 30px;
+}
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  height: 85vh;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  border: none;
+  background-color: rgb(192, 185, 185);
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
+  font-weight: bold;
+  font-size: 3rem;
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 250ms ease-in-out, transform 50ms ease-in-out;
+}
+
+.button:hover {
+  background-color: teal;
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+.error-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.error-404 > a {
+  text-decoration: none;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 8px;
+  width: 130px;
+  height: 45px;
+  background-color: black;
+  border: 0.2rem solid black;
+  outline: 0.2rem solid #3bb8d4;
+  outline-offset: -5px;
+}
+
+input[type="number"] {
+  width: 60%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  margin: 8px 0;
+  font-size: 25px;
+  border-radius: 12px;
+  border: none;
+}
+
+.negative {
+  color: red;
+  animation: pulse 500ms ease-in-out;
+}
+.positive {
+  color: green;
+  animation: pulse 500ms ease-in-out;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
